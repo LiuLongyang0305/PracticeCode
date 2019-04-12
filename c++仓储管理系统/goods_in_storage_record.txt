@@ -1,0 +1,6 @@
+
+			
+shoes	1	small	beijing	in	Mary	Sat-Oct-22-16:25:31-2016
+			
+table	2	small	shanghai	in	HJ	Sat-Oct-22-16:26:42-2016
+			

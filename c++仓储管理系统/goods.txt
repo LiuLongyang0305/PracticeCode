@@ -1,0 +1,4 @@
+shoes	1	small	beijing	in	Mary	1477124731		Sat-Oct-22-16:25:31-2016
+			none	0		norecord			
+table	2	small	shanghai	in	HJ	1477124802		Sat-Oct-22-16:26:42-2016
+			none	0		norecord			
