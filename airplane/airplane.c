@@ -292,8 +292,8 @@ int set_term()
 	if (tcsetattr(STDIN_FILENO, TCSAFLUSH, &new) == -1) 
 	{
 		tcsetattr(STDIN_FILENO, TCSAFLUSH, &old);
-		exit(1);
 	}
+    exit(1);
 }
 //恢复终端属性
 int reset_term()
