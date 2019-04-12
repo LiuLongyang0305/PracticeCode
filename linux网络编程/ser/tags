@@ -1,0 +1,98 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACTIVE_USER	ser.h	/^}ACTIVE_USER;$/;"	t	typeref:struct:active_user_
+ACTIVE_USER_DATA	ser.h	/^}ACTIVE_USER_DATA;$/;"	t	typeref:struct:active_user_data_
+ACTIVE_USER_DATA_LEN	ser.h	85;"	d
+ACTIVE_USER_LEN	ser.h	83;"	d
+AddActiveUser	ser.c	/^void AddActiveUser(ACTIVE_USER *online_user)$/;"	f
+AddConnectUserIp	ser.c	/^void AddConnectUserIp(IP_INFO *ip)$/;"	f
+AddFdToEpollInstance	ser.c	/^int  AddFdToEpollInstance(int fd ,int type)$/;"	f
+AddNewAccount	ser.c	/^void AddNewAccount(USER *user)$/;"	f
+CLOSE	ser.h	22;"	d
+COMMON_DATA	ser.h	/^}COMMON_DATA;$/;"	t	typeref:struct:common_data_
+CheckLogin	ser.c	/^void CheckLogin(USER *user)$/;"	f
+ClearRegisteruserList	ser.c	/^void ClearRegisteruserList()$/;"	f
+CreatNewAccountNum	ser.c	/^uint32_t CreatNewAccountNum()$/;"	f
+DelFdFromEpollInstance	ser.c	/^int DelFdFromEpollInstance(int fd)$/;"	f
+DeleteActiveUser	ser.c	/^void DeleteActiveUser(int fd)$/;"	f
+DeleteRegisterUser	ser.c	/^void DeleteRegisterUser(USER *user)$/;"	f
+FindUserIpInfo	ser.c	/^void FindUserIpInfo(IP_INFO *ip_info)$/;"	f
+GetAddress	ser.c	/^int GetAddress(char **host)$/;"	f
+IP_INFO	ser.h	/^}IP_INFO;$/;"	t	typeref:struct:ip_info_
+NewPthreadFunction	ser.c	/^void *NewPthreadFunction(void *p)$/;"	f
+PACK_HEAD	ser.h	/^}PACK_HEAD;$/;"	t	typeref:struct:pack_head_
+PACK_HEAD_LEN	ser.h	43;"	d
+READ	ser.h	23;"	d
+ReadActiveUserDataFromHost	ser.c	/^ static int ReadActiveUserDataFromHost(int fd)$/;"	f	file:
+ReadDataFromOtherUser	ser.c	/^int ReadDataFromOtherUser(int fd)$/;"	f
+ReadRegisterUserfromFile	ser.c	/^int ReadRegisterUserfromFile()$/;"	f
+ReadStructDataFromOtherUsers	ser.c	/^static int ReadStructDataFromOtherUsers(int fd,int type)$/;"	f	file:
+SER_PORT	ser.h	21;"	d
+STRUCT_DATA	ser.h	/^}STRUCT_DATA;$/;"	t	typeref:struct:struct_data_
+SendActiveUserData	ser.c	/^int SendActiveUserData(ACTIVE_USER* user,int fd,int ope)$/;"	f
+SendAllActiveUser	ser.c	/^int SendAllActiveUser(int fd)$/;"	f
+SendCommonData	ser.c	/^int SendCommonData(char *src,char *to_name,int fd)$/;"	f
+SendExitUser	ser.c	/^int SendExitUser(ACTIVE_USER *user)$/;"	f
+SendNewJoinUser	ser.c	/^int SendNewJoinUser(ACTIVE_USER *user)$/;"	f
+SendStructData	ser.c	/^int SendStructData(USER* user,char *to_name,int fd)$/;"	f
+SettleReadyCloseFd	ser.c	/^int SettleReadyCloseFd()$/;"	f
+SettleReadyToReadFd	ser.c	/^int  SettleReadyToReadFd(int listen_fd)$/;"	f
+ShowActiveUser	ser.c	/^void ShowActiveUser()$/;"	f
+ShowRegisterUser	ser.c	/^void ShowRegisterUser()$/;"	f
+USER	ser.h	/^}USER;$/;"	t	typeref:struct:user_
+USER_LEN	ser.h	51;"	d
+WriteRegisterUserToFile	ser.c	/^int  WriteRegisterUserToFile()$/;"	f
+_SER_H	ser.h	2;"	d
+act_state	ser.h	/^	int act_state;$/;"	m	struct:pack_head_
+act_user	ser.h	/^	ACTIVE_USER act_user;$/;"	m	struct:active_user_data_
+active_user_	ser.h	/^typedef struct active_user_$/;"	s
+active_user_data_	ser.h	/^typedef struct active_user_data_$/;"	s
+addr	ser.h	/^	ipv4_addr addr;$/;"	m	struct:active_user_
+cc	Makefile	/^cc:=gcc$/;"	m
+com_addr	ser.h	/^typedef struct sockaddr com_addr;$/;"	t	typeref:struct:sockaddr
+common_data_	ser.h	/^typedef struct common_data_$/;"	s
+current_user	ser.c	/^USER current_user;$/;"	v
+data	ser.h	/^	char data[0];$/;"	m	struct:common_data_
+ep_fd_close	ser.c	/^int ep_fd_read = -1,ep_fd_close = -1;$/;"	v
+ep_fd_read	ser.c	/^int ep_fd_read = -1,ep_fd_close = -1;$/;"	v
+epoll_event	ser.h	/^typedef struct epoll_event epoll_event;$/;"	t	typeref:struct:epoll_event
+events_close	ser.c	/^epoll_event events_read[20], events_close[20];$/;"	v
+events_read	ser.c	/^epoll_event events_read[20], events_close[20];$/;"	v
+from_name	ser.h	/^	char from_name[20];$/;"	m	struct:pack_head_
+head	ser.h	/^	PACK_HEAD head;$/;"	m	struct:active_user_data_
+head	ser.h	/^	PACK_HEAD head;$/;"	m	struct:common_data_
+head	ser.h	/^	PACK_HEAD head;$/;"	m	struct:struct_data_
+ip_head	ser.c	/^IP_INFO *ip_head;$/;"	v
+ip_info	ser.h	/^	ipv4_addr ip_info;$/;"	m	struct:ip_info_
+ip_info_	ser.h	/^typedef struct ip_info_$/;"	s
+ipv4_addr	ser.h	/^typedef struct sockaddr_in ipv4_addr;$/;"	t	typeref:struct:sockaddr_in
+ipv4_addr_len	ser.h	27;"	d
+len	ser.h	/^	int len;$/;"	m	struct:pack_head_
+main	Makefile	/^main:=sys_pro_ser$/;"	m
+main	ser_main.c	/^int main()$/;"	f
+mutex	ser.c	/^pthread_mutex_t mutex;$/;"	v
+name	ser.h	/^	char name[20];$/;"	m	struct:user_
+num	ser.h	/^	uint32_t num;$/;"	m	struct:user_
+object	Makefile	/^object:=ser.o ser_main.o $/;"	m
+online_head	ser.c	/^ACTIVE_USER *online_head;$/;"	v
+option	Makefile	/^option:=-g -lm -lpthread$/;"	m
+pNext	ser.h	/^	struct active_user_ *pNext;$/;"	m	struct:active_user_	typeref:struct:active_user_::active_user_
+pNext	ser.h	/^	struct ip_info_ *pNext;$/;"	m	struct:ip_info_	typeref:struct:ip_info_::ip_info_
+pNext	ser.h	/^	struct user_ *pNext;$/;"	m	struct:user_	typeref:struct:user_::user_
+pack_head_	ser.h	/^typedef struct pack_head_$/;"	s
+password	ser.h	/^	char password[20];$/;"	m	struct:user_
+pthread_flag	ser.c	/^int pthread_flag = 0;$/;"	v
+read_user	ser.c	/^USER *read_user;$/;"	v
+reg_head	ser.c	/^USER *reg_head;$/;"	v
+socket_fd	ser.h	/^	int socket_fd;$/;"	m	struct:active_user_
+struct_data_	ser.h	/^typedef struct struct_data_$/;"	s
+to_name	ser.h	/^	char to_name[20];$/;"	m	struct:pack_head_
+type	ser.h	/^	int type;$/;"	m	struct:pack_head_
+user	ser.h	/^	USER user;$/;"	m	struct:active_user_
+user	ser.h	/^	USER user;$/;"	m	struct:struct_data_
+user_	ser.h	/^typedef struct user_$/;"	s
+version	ser.h	/^	int version;$/;"	m	struct:pack_head_

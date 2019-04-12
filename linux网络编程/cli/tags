@@ -1,0 +1,118 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACTIVE_USER	cli.h	/^}ACTIVE_USER;$/;"	t	typeref:struct:active_user_
+ACTIVE_USER_DATA	cli.h	/^}ACTIVE_USER_DATA;$/;"	t	typeref:struct:active_user_data_
+ACTIVE_USER_DATA_LEN	cli.h	90;"	d
+ACTIVE_USER_LEN	cli.h	88;"	d
+AddActiveUser	cli.c	/^void AddActiveUser(ACTIVE_USER *online_user)$/;"	f
+AddFdToEpollInstance	cli.c	/^int  AddFdToEpollInstance(int fd)$/;"	f
+AddMessageToClientMessageList	cli.c	/^void AddMessageToClientMessageList(MESSAGE* head,MESSAGE* message)$/;"	f
+AddMessageToNewMessageList	cli.c	/^void AddMessageToNewMessageList(MESSAGE* message)$/;"	f
+CLOSE	cli.h	22;"	d
+COMMON_DATA	cli.h	/^}COMMON_DATA;$/;"	t	typeref:struct:common_data_
+COMMON_DATA_LEN	cli.h	65;"	d
+ChangeStringToInt	cli.c	/^static int ChangeStringToInt(char str[])$/;"	f	file:
+CheckOperation	cli.c	/^static int CheckOperation( int num,int left,int right)$/;"	f	file:
+ChooseOperation	cli.c	/^int ChooseOperation()$/;"	f
+ChooseOperationAfterLogin	cli.c	/^int ChooseOperationAfterLogin()$/;"	f
+ClearNewMessageList	cli.c	/^void ClearNewMessageList()$/;"	f
+ConnectServerHost	cli.c	/^int  ConnectServerHost()$/;"	f
+CreateNewAccount	cli.c	/^int CreateNewAccount(int fd)$/;"	f
+CreateUDPCommucation	cli.c	/^int CreateUDPCommucation()$/;"	f
+DelFdFromEpollInstance	cli.c	/^int DelFdFromEpollInstance(int fd)$/;"	f
+DeleteActiveUser	cli.c	/^void DeleteActiveUser(int fd)$/;"	f
+FindOtherClientAddressByIpAddress	cli.c	/^void  FindOtherClientAddressByIpAddress(ACTIVE_USER* act_user,ipv4_addr *addr)$/;"	f
+FindOtherClientAddressBySocketFd	cli.c	/^void  FindOtherClientAddressBySocketFd(ACTIVE_USER* act_user,int fd)$/;"	f
+GetAddress	cli.c	/^int GetAddress(char **host)$/;"	f
+GetCurrentTime	cli.c	/^void GetCurrentTime(char cur_time[])$/;"	f
+MESSAGE	cli.h	/^}MESSAGE;$/;"	t	typeref:struct:message_
+MESSAGE_LEN	cli.h	103;"	d
+MyPrintf	cli.c	/^void MyPrintf(char str[])$/;"	f
+MyPrintfStar	cli.c	/^static void MyPrintfStar()$/;"	f	file:
+PACK_HEAD	cli.h	/^}PACK_HEAD;$/;"	t	typeref:struct:pack_head_
+PACK_HEAD_LEN	cli.h	50;"	d
+READ	cli.h	23;"	d
+ReadActiveUserDataFromHost	cli.c	/^static int ReadActiveUserDataFromHost(int fd,int ope)$/;"	f	file:
+ReadCommonDataFromOtherClients	cli.c	/^int ReadCommonDataFromOtherClients(int fd)$/;"	f
+ReadDataFromOtherUser	cli.c	/^int ReadDataFromOtherUser(int fd)$/;"	f
+ReadPthreadFunction	cli.c	/^void *ReadPthreadFunction(void *p)$/;"	f
+ReadStructDataFromOtherUsers	cli.c	/^static int ReadStructDataFromOtherUsers(int fd)$/;"	f	file:
+SER_PORT	cli.h	21;"	d
+STRUCT_DATA	cli.h	/^}STRUCT_DATA;$/;"	t	typeref:struct:struct_data_
+SendCommonData	cli.c	/^int SendCommonData(char *src,int other_cli_fd)$/;"	f
+SendMessageToAllClient	cli.c	/^int SendMessageToAllClient(char data[])$/;"	f
+SendStructData	cli.c	/^int SendStructData(USER* user,char *to_name,int fd,int type)$/;"	f
+SetBlockFife	cli.c	/^void SetBlockFife(int fd)$/;"	f
+SetNonBlockFife	cli.c	/^void SetNonBlockFife(int fd)$/;"	f
+SettleReadyToReadFd	cli.c	/^int  SettleReadyToReadFd()$/;"	f
+ShowActiveUser	cli.c	/^int ShowActiveUser()$/;"	f
+ShowMessageList	cli.c	/^void ShowMessageList(MESSAGE *head)$/;"	f
+USER	cli.h	/^}USER;$/;"	t	typeref:struct:user_
+USER_LEN	cli.h	58;"	d
+UserLogin	cli.c	/^int UserLogin(int fd)$/;"	f
+_CLI_H_	cli.h	2;"	d
+act_ope	cli.h	/^	int act_ope;$/;"	m	struct:pack_head_
+act_user	cli.h	/^	ACTIVE_USER act_user;$/;"	m	struct:active_user_data_
+active_user_	cli.h	/^typedef struct active_user_$/;"	s
+active_user_data_	cli.h	/^typedef struct active_user_data_$/;"	s
+active_user_num	cli.c	/^int active_user_num = 0;$/;"	v
+addr	cli.h	/^	ipv4_addr addr;$/;"	m	struct:active_user_
+cc	Makefile	/^cc:=gcc$/;"	m
+cli_message_head	cli.c	/^MESSAGE *cli_message_head[50];$/;"	v
+cli_message_head	cli.h	/^MESSAGE *cli_message_head[50];$/;"	v
+cli_socket_fd	cli.c	/^int cli_socket_fd = -1;$/;"	v
+cli_udp_addr	cli.c	/^ipv4_addr   cli_udp_addr;$/;"	v
+cli_udp_fd	cli.c	/^int cli_udp_fd = -1;$/;"	v
+com_addr	cli.h	/^typedef struct sockaddr com_addr;$/;"	t	typeref:struct:sockaddr
+common_data_	cli.h	/^typedef struct common_data_$/;"	s
+current_user	cli.c	/^USER current_user;$/;"	v
+data	cli.h	/^	char data[128];$/;"	m	struct:common_data_
+data	cli.h	/^	char data[128];$/;"	m	struct:message_
+ep_fd_read	cli.c	/^int ep_fd_read = -1;$/;"	v
+epoll_event	cli.h	/^typedef struct epoll_event epoll_event;$/;"	t	typeref:struct:epoll_event
+events_read	cli.c	/^epoll_event events_read[20];$/;"	v
+from_name	cli.h	/^	char from_name[20];$/;"	m	struct:message_
+from_name	cli.h	/^	char from_name[20];$/;"	m	struct:pack_head_
+head	cli.h	/^	PACK_HEAD head;$/;"	m	struct:active_user_data_
+head	cli.h	/^	PACK_HEAD head;$/;"	m	struct:common_data_
+head	cli.h	/^	PACK_HEAD head;$/;"	m	struct:struct_data_
+ipv4_addr	cli.h	/^typedef struct sockaddr_in ipv4_addr;$/;"	t	typeref:struct:sockaddr_in
+ipv4_addr_len	cli.h	32;"	d
+len	cli.h	/^	int len;$/;"	m	struct:pack_head_
+login_flag	cli.c	/^int login_flag = -1;$/;"	v
+main	Makefile	/^main:=sys_pro_cli$/;"	m
+main	cli_main.c	/^int main()$/;"	f
+message_	cli.h	/^typedef struct message_$/;"	s
+message_num	cli.h	/^	int message_num;$/;"	m	struct:message_
+mutex_active_user	cli.c	/^pthread_mutex_t mutex_active_user;;$/;"	v
+mutex_message_list	cli.c	/^pthread_mutex_t mutex_message_list;$/;"	v
+name	cli.h	/^	char name[20];$/;"	m	struct:user_
+new_message_head	cli.c	/^MESSAGE *new_message_head = NULL;$/;"	v
+new_message_head	cli.h	/^MESSAGE *new_message_head;$/;"	v
+num	cli.h	/^	uint32_t num;$/;"	m	struct:user_
+object	Makefile	/^object:=cli.o  cli_main.o  $/;"	m
+online_head	cli.c	/^ACTIVE_USER *online_head;$/;"	v
+online_user	cli.c	/^ACTIVE_USER *online_user;$/;"	v
+option	Makefile	/^option:=-g -lm -lpthread$/;"	m
+pFun	cli.h	/^typedef int(*pFun)(int);$/;"	t
+pNext	cli.h	/^	struct active_user_ *pNext;$/;"	m	struct:active_user_	typeref:struct:active_user_::active_user_
+pNext	cli.h	/^	struct message_ *pNext;$/;"	m	struct:message_	typeref:struct:message_::message_
+pNext	cli.h	/^	struct user_ *pNext;$/;"	m	struct:user_	typeref:struct:user_::user_
+pack_head_	cli.h	/^typedef struct pack_head_$/;"	s
+password	cli.h	/^	char password[20];$/;"	m	struct:user_
+pthread_flag	cli.c	/^int pthread_flag = 0;$/;"	v
+read_user	cli.c	/^USER read_user;$/;"	v
+socket_fd	cli.h	/^	int socket_fd;$/;"	m	struct:active_user_
+struct_data_	cli.h	/^typedef struct struct_data_$/;"	s
+time	cli.h	/^	char time[28];$/;"	m	struct:message_
+to_name	cli.h	/^	char to_name[20];$/;"	m	struct:message_
+to_name	cli.h	/^	char to_name[20];$/;"	m	struct:pack_head_
+type	cli.h	/^	int type;$/;"	m	struct:pack_head_
+user	cli.h	/^	USER user;$/;"	m	struct:active_user_
+user	cli.h	/^	USER user;$/;"	m	struct:struct_data_
+user_	cli.h	/^typedef struct user_$/;"	s
+version	cli.h	/^	int version;$/;"	m	struct:pack_head_
