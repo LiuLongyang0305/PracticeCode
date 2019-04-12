@@ -1,0 +1,6 @@
+number	name	subject	class
+zxx	1601	Chinese	A1
+wk	1602	math	A1
+yy	1603	English	A1
+cgq	1604	C_lang	A1
+lly	1605	math	A2
